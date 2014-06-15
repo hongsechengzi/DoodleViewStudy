@@ -19,6 +19,8 @@
 		C201F844194D9E35009A1241 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C201F82C194D9E35009A1241 /* UIKit.framework */; };
 		C201F84C194D9E35009A1241 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C201F84A194D9E35009A1241 /* InfoPlist.strings */; };
 		C201F84E194D9E35009A1241 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C201F84D194D9E35009A1241 /* __Tests.m */; };
+		C201F859194DA08F009A1241 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C201F858194DA08F009A1241 /* RootViewController.m */; };
+		C201F85C194DA0D7009A1241 /* DoodleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C201F85B194DA0D7009A1241 /* DoodleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		C201F849194D9E35009A1241 /* 绘图Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "绘图Tests-Info.plist"; sourceTree = "<group>"; };
 		C201F84B194D9E35009A1241 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C201F84D194D9E35009A1241 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		C201F857194DA08F009A1241 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		C201F858194DA08F009A1241 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C201F85A194DA0D7009A1241 /* DoodleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoodleView.h; sourceTree = "<group>"; };
+		C201F85B194DA0D7009A1241 /* DoodleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoodleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,10 @@
 			children = (
 				C201F837194D9E35009A1241 /* AppDelegate.h */,
 				C201F838194D9E35009A1241 /* AppDelegate.m */,
+				C201F857194DA08F009A1241 /* RootViewController.h */,
+				C201F858194DA08F009A1241 /* RootViewController.m */,
+				C201F85A194DA0D7009A1241 /* DoodleView.h */,
+				C201F85B194DA0D7009A1241 /* DoodleView.m */,
 				C201F83A194D9E35009A1241 /* Images.xcassets */,
 				C201F82F194D9E35009A1241 /* Supporting Files */,
 			);
@@ -240,7 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C201F839194D9E35009A1241 /* AppDelegate.m in Sources */,
+				C201F85C194DA0D7009A1241 /* DoodleView.m in Sources */,
 				C201F835194D9E35009A1241 /* main.m in Sources */,
+				C201F859194DA08F009A1241 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "绘图/绘图-Prefix.pch";
 				INFOPLIST_FILE = "绘图/绘图-Info.plist";
@@ -370,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "绘图/绘图-Prefix.pch";
 				INFOPLIST_FILE = "绘图/绘图-Info.plist";
